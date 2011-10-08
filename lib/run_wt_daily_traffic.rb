@@ -74,7 +74,7 @@ for i in 1..n
 		revenue = data_row.xpath('./list/float[@name="Revenue"]').text
     
     # Uncomment if need to output to CSV
-		# us_traffic_daily_csv_file(csv, date, country, visits, orders, revenue)
+		# traffic_daily_csv_file(csv, date, country, visits, orders, revenue)
 
     # Insert data into DB table
     begin

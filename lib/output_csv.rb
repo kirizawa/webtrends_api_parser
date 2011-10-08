@@ -1,37 +1,6 @@
 require 'csv'
 
 
-def new_return_csv_file(csv, month, dimension, visits, pdp, orders, units, revenue)
-
-  wt_data = []
-  wt_data << month
-  wt_data << dimension
-  wt_data << visits
-  wt_data << pdp
-  wt_data << orders
-  wt_data << units
-  wt_data << revenue
- 
-  csv << CSV::Row.new(FIELDS, wt_data)
-end  
-
-
-def traffic_source_csv_file(csv, date, source, visits, pdp, orders, units, revenue)
-
-  wt_data = []
-  wt_data << date
-  wt_data << source
-  wt_data << visits
-  wt_data << pdp
-  wt_data << orders
-  wt_data << units
-  wt_data << revenue
- 
-  csv << CSV::Row.new(FIELDS, wt_data)
-
-end
-
-
 def traffic_source_daily_csv_file(csv, date, source, visits, pdp, orders, revenue)
 
   wt_data = []
@@ -46,7 +15,7 @@ def traffic_source_daily_csv_file(csv, date, source, visits, pdp, orders, revenu
 
 end
 
-def us_traffic_daily_csv_file(csv, date, country, visits, orders, revenue)
+def traffic_daily_csv_file(csv, date, country, visits, orders, revenue)
 
   wt_data = []
   wt_data << date
@@ -59,18 +28,7 @@ def us_traffic_daily_csv_file(csv, date, country, visits, orders, revenue)
 
 end
 
-def campaignid_traffic_daily_csv_file(csv, date, campaignid, visits)
-
-  wt_data = []
-  wt_data << date
-  wt_data << campaignid
-  wt_data << visits
-
-  csv << CSV::Row.new(FIELDS, wt_data)
-
-end
-
-def seo_traffic_daily_csv_file(csv, date, phrase, visits)
+def seo_phrase_daily_csv_file(csv, date, phrase, visits)
 
   wt_data = []
   wt_data << date
@@ -92,7 +50,7 @@ def seo_engine_daily_traffic(csv, date, search_engine, visits)
 
 end
 
-def paid_search_engine_daily_traffic(csv, date, search_engine, visits)
+def sem_engine_daily_traffic(csv, date, search_engine, visits)
 
   wt_data = []
   wt_data << date

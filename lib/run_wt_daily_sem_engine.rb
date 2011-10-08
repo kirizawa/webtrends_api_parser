@@ -64,7 +64,7 @@ for i in 1..num_days
 
 		puts date + " - " + search_engine + " - " + visits 
 
-		paid_search_engine_daily_traffic(csv, date, search_engine, visits)
+		sem_engine_daily_traffic(csv, date, search_engine, visits)
 
 	end
 

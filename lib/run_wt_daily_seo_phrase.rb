@@ -47,7 +47,7 @@ for i in 1..num_days
 
 		puts date + " - " + phrase + " - " + visits 
 
-		seo_traffic_daily_csv_file(csv, date, phrase, visits)
+		seo_phrase_daily_csv_file(csv, date, phrase, visits)
 
 	end
 
