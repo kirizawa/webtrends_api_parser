@@ -1,4 +1,4 @@
-# **Web Traffic Dashboard**
+# **Webtrends REST API Parser**
 
 Sample programs to process Webtrends data into MySyQL database, and some codes output into CSV file instead.
 
