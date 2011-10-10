@@ -2,7 +2,6 @@ require '../profile/profile'
 require '../lib/wt_api_extract'
 require '../lib/output_csv'
 require '../lib/days_in_month'
-require 'rubygems'
 require 'nokogiri'
 require 'csv'
 

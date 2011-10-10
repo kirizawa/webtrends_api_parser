@@ -1,7 +1,6 @@
 require '../profile/profile'
 require '../lib/wt_api_extract'
 require '../lib/output_csv'
-require 'rubygems'
 require 'nokogiri'
 require 'dbi'
 require 'date'
